@@ -1,10 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-
+import App from './App'
 render(
-  <div>
-    <h2>React Boilerplate Component Demo</h2>
-  
-  </div>, 
+  <App/>, 
   document.getElementById('app')
 );
