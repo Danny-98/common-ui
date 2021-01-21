@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
-class Container extends Component {
+import { ContainerType } from '../types'
+class Container extends Component<ContainerType> {
     render() {
         return (
-            <div>
-                
-            </div>
+            <svg>
+
+            </svg>
         );
     }
 }

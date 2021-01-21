@@ -1,7 +1,9 @@
-type Container ={
-    backGroundColor:string,
-    foreGroundColor:string,
+type ContainerType ={
+    backGroundColor?:string,
+    foreGroundColor?:string,
     height:number,
     width:number
-    styles:object
+    styles?:object
 }
+
+export {ContainerType}
