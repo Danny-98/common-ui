@@ -1,9 +1,9 @@
-type Circle = {
-    width: number,
-    height: number,
+type CircleType = {
+    width?: number,
+    height?: number,
     radius: number,
     stroke?: string,
-    strokeWidth?: number
+    strokeWidth?: string
 }
 
-export { Circle }
+export { CircleType }
