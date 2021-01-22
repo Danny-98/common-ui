@@ -4,7 +4,9 @@ type ContainerType = {
     height: number,
     width: number
     styles?: object
-    children: object
+    children: object,
+    minX?: number,
+    minY?: number
 }
 
 export { ContainerType }

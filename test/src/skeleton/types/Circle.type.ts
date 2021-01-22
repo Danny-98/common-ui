@@ -4,6 +4,9 @@ type CircleType = {
     radius: number,
     stroke?: string,
     strokeWidth?: string
+    fill: string,
+    cx?:number,
+    cy?:number
 }
 
 export { CircleType }

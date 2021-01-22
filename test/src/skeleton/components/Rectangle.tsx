@@ -1,19 +1,11 @@
 import React, { Component } from "react";
+import { RectType } from '../types'
+class Rectangle extends Component<RectType> {
 
-class Rectangle extends Component {
   render() {
+    const { heigth, width, } = this.props
     return (
-      <svg width="400" height="180">
-        <rect
-          x="50"
-          y="20"
-          rx="20"
-          ry="20"
-          width="150"
-          height="150"
-          style="fill:red;stroke:black;stroke-width:5;opacity:0.5"
-        />
-      </svg>
+      <rect x="0" y="105" rx="5" ry="5" width={width} height={heigth} />
     );
   }
 }
