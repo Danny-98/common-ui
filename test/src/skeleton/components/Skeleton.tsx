@@ -1,4 +1,4 @@
-import "../assets/styles/main.scss";
+import "../../styles/main.scss";
 
 export { default as SkContainer } from "./Container";
 export { default as SkCircle } from "./Circle";

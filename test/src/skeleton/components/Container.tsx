@@ -5,9 +5,9 @@ class Container extends Component<ContainerType> {
     render() {
         const { width, height, children, minX = 0, minY = 0 } = this.props
         return (
-            <svg width={width} height={height} viewBox={`${minX} ${minY} ${width} ${height}`}>
+            <div style={{height,width}} className="card">
                 {children}
-            </svg>
+            </div>
         );
     }
 }

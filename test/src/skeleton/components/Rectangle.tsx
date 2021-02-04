@@ -3,9 +3,9 @@ import { RectType } from '../types'
 class Rectangle extends Component<RectType> {
 
   render() {
-    const { heigth, width, } = this.props
+    const { heigth, width, x, y, fill, radiusX, radiusY } = this.props
     return (
-      <rect x="0" y="105" rx="5" ry="5" width={width} height={heigth} />
+      <rect x={x} y={y} rx={radiusX} ry={radiusY} width={width} height={heigth} fill={fill} />
     );
   }
 }
