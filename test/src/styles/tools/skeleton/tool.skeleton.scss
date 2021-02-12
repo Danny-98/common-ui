@@ -1,0 +1,6 @@
+@mixin Shape($width,$height) {
+    width: $width;
+    height:  $height;
+    // background-color: white;
+    position: relative;
+}

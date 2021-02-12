@@ -1,0 +1,55 @@
+@import "../../settings/colors.scss";
+@import "../../tools/skeleton/tool.skeleton.scss";
+@import "../../generic/generic.scss";
+
+.sk-rect {
+    max-width: 350px;
+    border: 1px solid;
+    box-shadow: 9px 17px 45px -29px rgba(0, 0, 0, 0.44);
+    background-color:black;
+    @include Shape(50px, 50px);
+}
+.sk-circle {
+    max-width: 50px;
+    border: 1px solid;
+    box-shadow: 9px 17px 45px -29px rgba(0, 0, 0, 0.44);
+    background-color: $primary-bg-item;
+    border-radius: 50%;
+    @include Shape(50px, 50px);
+}
+.sk-container {
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    margin: 12px;
+    border-radius: 5px;
+    box-shadow: 9px 17px 45px -29px rgba(0, 0, 0, 0.44);
+    border: 1px solid;
+    position: relative;
+}
+.sk-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(transparent),
+        color-stop(rgba(255, 255, 255, 0.2)),
+        to(transparent)
+    );
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    z-index: 99999;
+    animation: shimmer 1s linear infinite;
+}
+
+// .header .img::before {
+//     background-size: 650px 600px;
+// }
+// .details span::before {
+//     animation-delay: 0.2s;
+// }

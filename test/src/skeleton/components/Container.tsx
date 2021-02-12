@@ -3,9 +3,9 @@ import { ContainerType } from '../types'
 class Container extends Component<ContainerType> {
 
     render() {
-        const { width, height, children, minX = 0, minY = 0 } = this.props
+        const { width, height, children } = this.props
         return (
-            <div style={{height,width}} className="card">
+            <div style={{ width, height }} className="sk-container">
                 {children}
             </div>
         );

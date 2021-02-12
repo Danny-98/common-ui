@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import { SkContainer, SkCircle, SkRect } from "./skeleton";
-export default class app extends Component {
+import { SkContainer, SkRect, SkCircle } from "./skeleton";
+export default class App extends Component {
   render() {
     return (
-      <div >
-        <SkContainer height={500} width={500} >
-
-        </SkContainer>
-      </div>
+      <SkContainer width={500} height={200}>
+        <SkRect />
+        <SkCircle />
+      </SkContainer>
     );
   }
 }
